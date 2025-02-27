@@ -26,5 +26,24 @@
 		"formatter": {
 			"quoteStyle": "double"
 		}
-	}
+	},
+	"overrides": [
+		{
+			"include": ["frontend/**/*"],
+			"linter": {
+				"rules": {
+					"correctness": {
+						"useHookAtTopLevel": "error",
+						"noUndeclaredVariables": "error",
+						"noUnusedImports": "warn",
+						"noUnusedVariables": "warn"
+					},
+					"nursery": {
+						"useSortedClasses": "warn",
+						"noProcessEnv": "warn"
+					}
+				}
+			}
+		}
+	]
 }

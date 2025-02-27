@@ -1,0 +1,17 @@
+{
+	"extends": ["../biome.json"],
+	"linter": {
+		"rules": {
+			"correctness": {
+				"useHookAtTopLevel": "error",
+				"noUndeclaredVariables": "error",
+				"noUnusedImports": "warn",
+				"noUnusedVariables": "warn"
+			},
+			"nursery": {
+				"useSortedClasses": "warn",
+				"noProcessEnv": "warn"
+			}
+		}
+	}
+}
