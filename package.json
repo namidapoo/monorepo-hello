@@ -1,4 +1,16 @@
 {
+	"scripts": {
+		"format:fe": "pnpm --filter=frontend format",
+		"format:be": "pnpm --filter=backend format",
+		"lint:fe": "pnpm --filter=frontend lint",
+		"lint:be": "pnpm --filter=backend lint",
+		"check:fe": "pnpm --filter=frontend check",
+		"check:be": "pnpm --filter=backend check",
+		"format": "pnpm -r format",
+		"lint": "pnpm -r lint",
+		"check": "pnpm -r check",
+		"dev": "pnpm --filter=frontend dev"
+	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4"
 	}
